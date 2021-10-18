@@ -1,0 +1,37 @@
+<div class="wrap-joke">
+  <div class="title">
+      Joke - {{data.joke.id}}
+  </div>
+  <div class="message">
+      <div>
+        <div>
+          The joke is: {{data.joke.joke || data.joke.setup}}.
+        </div>
+        <div>
+          {{data.joke.delivery}}
+        </div>
+      </div>
+      <div>
+        The joke is in category {{data.joke.category}}, and his type is: {{data.joke.type}}.
+      </div>
+      <div>
+        the joke is {{data.joke.flags.nsfw ? '' : 'not'}} NSFW, and it is {{data.joke.flags.religious ? '' : 'not'}} religious,
+        and it is {{data.joke.flags.political ? '' : 'not'}} political,
+        and it is {{data.joke.flags.racist ? '' : 'not'}} racist,
+        and it is {{data.joke.flags.sexist ? '' : 'not'}} sexist,
+      </div>
+      <h3>
+        Some Of Same Jokes
+      </h3>
+      <ul>
+        <li *ngFor="let jokeItem in data.jokesRandom">
+          {{jokeItem.joke || jokeItem.setup}}
+        </li>
+      </ul>
+  </div>
+  <div class="actions">
+      <button type="button" mat-flat-button mat-dialog-close autofocus="false">
+          Exit
+      </button>
+  </div>
+</div>

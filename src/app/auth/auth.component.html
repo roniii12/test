@@ -1,0 +1,59 @@
+<div class="wrap-auth">
+  <div class="wrap-auth-content">
+    <!-- <div class="page-title">
+      Moody
+    </div> -->
+    <app-loading-spinner *ngIf="isLoading"></app-loading-spinner>
+    <div class="form" *ngIf="!isLoading">
+      <h1 class="form-title">
+        LOGIN
+      </h1>
+      <div *ngIf="this.error" class="errorMsg large">
+        {{this.error}}
+      </div>
+      <form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+        <div class="form-control">
+          <input
+            id="email"
+            placeholder="Email"
+            name="email"
+            class="form-input"
+            formControlName="email"
+            [ngClass]="{'errorField': authForm.get('email').touched && authForm.get('email').errors}"
+            (focus)="authForm.get('email').errors?null:authForm.get('email').markAsUntouched()"
+          />
+          <div *ngIf="authForm.get('email').touched && authForm.get('email').errors" class="errorMsg">
+            <svg aria-hidden="true" class="errorMsg-icon" fill="currentColor" focusable="false" width="16px" height="16px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg>
+            <span *ngIf="authForm.get('email').errors.required">Please Enter An Email</span>
+            <span *ngIf="authForm.get('email').errors.email">The Email Is Invalid</span>
+          </div>
+        </div>
+        <div class="form-control">
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            class="form-input"
+            name="password"
+            formControlName="password"
+            [ngClass]="{'errorField': authForm.get('password').touched && authForm.get('password').errors}"
+            (focus)="authForm.get('password').errors? null:authForm.get('password').markAsUntouched()"
+          />
+          <div *ngIf="authForm.get('password').touched && authForm.get('password').errors" class="errorMsg">
+            <svg aria-hidden="true" class="errorMsg-icon" fill="currentColor" focusable="false" width="16px" height="16px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg>
+            <span *ngIf="authForm.get('password').errors.required">Please Enter A Password</span>
+          </div>
+        </div>
+        <div class="form-control">
+          <button
+            type="submit"
+            class="form-button"
+            [disabled]="!authForm.valid"
+          >
+            Sign In
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
