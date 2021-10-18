@@ -16,21 +16,6 @@
   transform: translateY(-25%);
 }
 
-.switchButton{
-  font-size: 1rem;
-  width: fit-content;
-  align-self: center;
-  color: #01579B;
-  text-decoration: underline;
-  cursor: pointer;
-}
-/* .switchButton:hover,.switchButton:active{
-  background-color: #4883e7;
-} */
-
-.none{
-  display: none !important;
-}
 .form{
   background-color: #fff;
   padding: 20px 20px;
@@ -47,35 +32,6 @@
   margin-bottom: 10px;
   font-weight: 800;
 }
-.form-control{
-  width: fit-content;
-  margin: 13px 0;
-  width: 364px;
-  text-align: center;
-}
-.form-input{
-  width: -webkit-fill-available;
-  outline: none;
-  border: 1px solid #bdbdbd;
-  padding:.8rem;
-  font-size: 1rem;
-  transition: .2s all;
-}
-.errorField{
-  border-color: #D84315;
-}
-.errorMsg{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 3px;
-  color: #D84315;
-  font-size: .75rem;
-  text-align: start;
-}
-
 .errorMsg.large{
   font-size: .95rem;
   margin:0;
@@ -88,15 +44,7 @@
   flex-shrink: 0;
 }
 
-.form-input:active,.form-input:focus{
-  border-color: #93d6f1;
-  box-shadow: 0px 0px 4px 2px #5cc4ee;
-}
 
-.errorField:active,.errorField:focus{
-  border-color: #D84315;
-  box-shadow: 0px 0px 4px 2px #D84315;
-}
 
 .form-button{
   width: 100%;
@@ -106,16 +54,26 @@
   color: #fff;
   font-size: 1.3rem;
   font-weight: 600;
-  background-color: rgb(var(--color-primary));
+  background-color: rgb(#01579B,.8);
   transition: .2s all;
   cursor: pointer;
+  &:hover,&n:active{
+    background-color: #01579B;
+  }
+  &:disabled{
+    background-color: #E0E0E0;
+    cursor: default;
+  }
 }
-.form-button:hover,.form-button:active{
-  background-color: #01579B;
-}
-.form-button:disabled{
-  background-color: #E0E0E0;
-  cursor: default;
+
+mat-form-field{
+  width: 100%;
+  margin: .5rem 0;
+  mat-error{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 
@@ -142,14 +100,5 @@
     form{
       width: 100%;
     }
-    .form-control{
-      width: 100%;
-      margin: 10px 0;
-    }
-  }
-  .page-title{
-    margin-bottom: 0;
-    margin-top: 10px;
-    z-index: 1;
   }
 }

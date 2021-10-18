@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { AuthRoutingModule } from './auth-routing.module';
 import { AuthComponent } from './auth.component';
 import { SharedModule } from '../shared/shared.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,9 @@ import { MatInputModule } from '@angular/material/input';
     ReactiveFormsModule,
     HttpClientModule,
     MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule
   ]
 })
 export class AuthModule { }

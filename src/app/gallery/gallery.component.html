@@ -1,58 +1,60 @@
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
-  <!-- Position Column -->
-  <ng-container matColumnDef="position">
-    <th mat-header-cell *matHeaderCellDef>No.</th>
-    <td mat-cell *matCellDef="let element">{{element.position}}</td>
-  </ng-container>
+<div class="wrap-gallery">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef>No.</th>
+      <td mat-cell *matCellDef="let element">{{element.position}}</td>
+    </ng-container>
 
-  <!-- Name Column -->
-  <ng-container matColumnDef="joke">
-    <th mat-header-cell *matHeaderCellDef>Joke</th>
-    <td mat-cell *matCellDef="let element">{{element.joke}}</td>
-  </ng-container>
+    <!-- Name Column -->
+    <ng-container matColumnDef="joke">
+      <th mat-header-cell *matHeaderCellDef>Joke</th>
+      <td mat-cell *matCellDef="let element">{{element.joke}}</td>
+    </ng-container>
 
-  <!-- Weight Column -->
-  <ng-container matColumnDef="type">
-    <th mat-header-cell *matHeaderCellDef>Type</th>
-    <td mat-cell *matCellDef="let element">{{element.type}}</td>
-  </ng-container>
+    <!-- Weight Column -->
+    <ng-container matColumnDef="type">
+      <th mat-header-cell *matHeaderCellDef>Type</th>
+      <td mat-cell *matCellDef="let element">{{element.type}}</td>
+    </ng-container>
 
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="nsfw">
-    <th mat-header-cell *matHeaderCellDef>NSFW</th>
-    <td mat-cell *matCellDef="let element">
-      <mat-checkbox class="gallery-checkbox" [value]="element.nsfw" [disabled]="true"></mat-checkbox>
-    </td>
-  </ng-container>
-  <ng-container matColumnDef="religious">
-    <th mat-header-cell *matHeaderCellDef>Religious</th>
-    <td mat-cell *matCellDef="let element">
-      <mat-checkbox class="gallery-checkbox" [value]="element.religious" [disabled]="true"></mat-checkbox>
-    </td>
-  </ng-container>
-  <ng-container matColumnDef="political">
-    <th mat-header-cell *matHeaderCellDef>Political</th>
-    <td mat-cell *matCellDef="let element">
-      <mat-checkbox class="gallery-checkbox" [value]="element.political" [disabled]="true"></mat-checkbox>
-    </td>
-  </ng-container>
-  <ng-container matColumnDef="racist">
-    <th mat-header-cell *matHeaderCellDef>Racist</th>
-    <td mat-cell *matCellDef="let element">
-      <mat-checkbox class="gallery-checkbox" [value]="element.racist" [disabled]="true"></mat-checkbox>
-    </td>
-  </ng-container>
-  <ng-container matColumnDef="sexist">
-    <th mat-header-cell *matHeaderCellDef>Sexist</th>
-    <td mat-cell *matCellDef="let element">
-      <mat-checkbox class="gallery-checkbox" [value]="element.sexist" [disabled]="true"></mat-checkbox>
-    </td>
-  </ng-container>
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="nsfw">
+      <th mat-header-cell *matHeaderCellDef>NSFW</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-checkbox class="gallery-checkbox" [value]="element.nsfw" [disabled]="true"></mat-checkbox>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="religious">
+      <th mat-header-cell *matHeaderCellDef>Religious</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-checkbox class="gallery-checkbox" [value]="element.religious" [disabled]="true"></mat-checkbox>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="political">
+      <th mat-header-cell *matHeaderCellDef>Political</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-checkbox class="gallery-checkbox" [value]="element.political" [disabled]="true"></mat-checkbox>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="racist">
+      <th mat-header-cell *matHeaderCellDef>Racist</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-checkbox class="gallery-checkbox" [value]="element.racist" [disabled]="true"></mat-checkbox>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="sexist">
+      <th mat-header-cell *matHeaderCellDef>Sexist</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-checkbox class="gallery-checkbox" [value]="element.sexist" [disabled]="true"></mat-checkbox>
+      </td>
+    </ng-container>
 
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr
-      mat-row
-      (click)="onRowClick(row)"
-      *matRowDef="let row; columns: displayedColumns;"
-  ></tr>
-</table>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr
+        mat-row
+        (click)="onRowClick(row)"
+        *matRowDef="let row; columns: displayedColumns;"
+    ></tr>
+  </table>
+</div>
