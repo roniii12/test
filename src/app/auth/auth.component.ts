@@ -3,11 +3,10 @@ import {
   OnDestroy,
   OnInit
 } from '@angular/core';
-import { FormGroup, NgForm, FormControl, Validators, Form } from '@angular/forms';
+import { FormGroup, FormControl, Validators, Form } from '@angular/forms';
 import { Subscription, Observable } from 'rxjs';
 
 import { Router, ActivatedRoute } from '@angular/router';
-import { map } from 'rxjs/operators';
 import { AuthService } from '../core/account/auth.service';
 import { User } from '../core/models/user.model';
 
@@ -57,15 +56,6 @@ export class AuthComponent implements OnInit, OnDestroy {
         this.isLoading = false;
       }
     );
-    // if (this.isLoginMode) {
-    //   this.store.dispatch(
-    //     new AuthActions.LoginStart({ username: this.username.value, password: this.password.value })
-    //   );
-    // } else {
-    //   this.store.dispatch(
-    //     new AuthActions.SignupStart({ username: this.username.value, password: this.password.value })
-    //   );
-    // }
 
     this.initForm();
   }
