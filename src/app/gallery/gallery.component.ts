@@ -52,6 +52,8 @@ export class GalleryComponent implements OnInit, OnDestroy {
     const currentJoke = this.jokes.filter(joke=>joke.id === row.id)
     this.dialog.open(JokesComponent,{
       width:'600px',
+      height: '800px',
+      maxHeight: '80%',
       data:{joke:currentJoke,jokesRandom:randomJokes}
     })
   }
