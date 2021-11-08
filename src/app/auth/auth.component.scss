@@ -2,14 +2,13 @@
   background-color: #eeeeee;
   width: 100vw;
   height: 100vh;
-}
-
-.wrap-auth-content,.wrap-auth{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
+  &, .wrap-auth-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+  }
 }
 
 .wrap-auth-content{
@@ -20,6 +19,29 @@
   background-color: #fff;
   padding: 20px 20px;
   box-shadow: 3px 5px 8px #cbc5c5;
+  &-title{
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
+  &-button{
+    width: 100%;
+    padding: .6rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: rgb(#01579B,.8);
+    transition: .2s all;
+    cursor: pointer;
+    &:hover,&n:active{
+      background-color: #01579B;
+    }
+    &:disabled{
+      background-color: #E0E0E0;
+      cursor: default;
+    }
+  }
 }
 .page-title{
   margin-bottom: 1rem;
@@ -28,10 +50,7 @@
   color:#01579B;
   text-shadow: 1px 1px 2px grey;
 }
-.form-title{
-  margin-bottom: 10px;
-  font-weight: 800;
-}
+
 .errorMsg.large{
   font-size: .95rem;
   margin:0;
@@ -42,28 +61,6 @@
   margin-top: 2px;
   align-self: baseline;
   flex-shrink: 0;
-}
-
-
-
-.form-button{
-  width: 100%;
-  padding: .6rem;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 600;
-  background-color: rgb(#01579B,.8);
-  transition: .2s all;
-  cursor: pointer;
-  &:hover,&n:active{
-    background-color: #01579B;
-  }
-  &:disabled{
-    background-color: #E0E0E0;
-    cursor: default;
-  }
 }
 
 mat-form-field{

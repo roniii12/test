@@ -74,7 +74,7 @@ export class AuthComponent implements OnInit, OnDestroy {
     let passwordAuth = '';
     this.authForm = new FormGroup({
       email: new FormControl(emailAuth , [Validators.required, Validators.email]),
-      password: new FormControl(passwordAuth, Validators.required)// this.validatePassword])
+      password: new FormControl(passwordAuth, Validators.required)
     })
   }
 }

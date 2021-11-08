@@ -21,53 +21,7 @@ export abstract class baseService {
     /** GET vendors from the server */
     protected get<T>(endPointUrl: string, headers?: {headers: HttpHeaders}): Observable<T> {
         return this.http.get<T>(`${this.apiUrl}/${endPointUrl}`, headers).pipe(
-            // retryWhen(error => {
-            //    return error.pipe(
-            //        flatMap((err: any) => {
-            //            if (err.status === 401) {
-            //                return of(err.status).pipe(delay(1000));
-            //            }
-            //            throw err;
-            //        }),
-            //        take(2),
-            //        catchError(this.handleError2));
-            // }),
             catchError(this.handleError(endPointUrl, null)));
-        //    retryWhen(errors => {
-        //    return errors.pipe(map((er: any) => {
-        //        if (er.status === 401) {
-        //            return of(er.status).pipe(delay(1000));
-        //        }
-        //        return throwError(er);
-        //    }) , take(3));
-        // }), catchError(this.handleError(endPointUrl, null)));
-            // .pipe(
-            //    retryWhen(errors => {
-            //        return errors.pipe(
-            //            mergeMap((er: any) => {
-            //                if (er.status === 401) {
-            //                    return of(er.status).pipe(delay(1000));
-            //                }
-            //                return throwError({ message: er.error.message || 'Notification.Core.loginError' });
-            //            }),
-            //            take(3),
-            //            concat(throwError({ message: 'Notification.Core.networkError' }))
-            //        );
-            //    })
-
-                // retryWhen(error => {
-                //    return error.pipe(
-                //        flatMap((err: any) => {
-                //            if (err.status === 401) {
-                //                return of(err.status).pipe(delay(1000));
-                //            }
-                //            return throwError(error);
-                //        }),
-                //        take(1),
-                //        concat(throwError(error)));
-                // }),
-                // catchError(this.handleError(endPointUrl, null))
-            // );
     }
 
     protected post<T>(endPointUrl: string , entity: T, options?: {headers: HttpHeaders}): Observable<T> {
@@ -109,10 +63,8 @@ export abstract class baseService {
     handleError2(error) {
         let errorMessage = '';
         if (error.error instanceof ErrorEvent) {
-            // client-side error
             errorMessage = `Error: ${error.error.message}`;
         } else {
-            // server-side error
             errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
         }
         console.error(errorMessage);
@@ -122,18 +74,13 @@ export abstract class baseService {
     handleError<T>(operation = 'operation', result = {} as T): (error: HttpErrorResponse) => Observable<T> {
 
         return (error: HttpErrorResponse): Observable<T> => {
-            // TODO: send the error to remote logging infrastructure
-            console.error(error); // log to console instead
+            console.error(error);
 
             const message = (error.error instanceof ErrorEvent) ?
                 error.error.message :
                 `server returned code ${error.status} with body "${error.error}"`;
 
-            // TODO: better job of transforming error for user consumption
             console.error(`${operation} failed: ${message}`);
-
-            // Let the app keep running by returning a safe result.
-           // return of(result);
             throw this.handleValidationErrors(error.error);
         };
 
@@ -152,27 +99,5 @@ export abstract class baseService {
         }
         return error;
     }
-
-
-
-
-    /* GET vendors whose name contains search term */
-    //searchvendors(term: string): Observable<VendorModel[]> {
-    //    term = term.trim();
-
-    //    // Add safe, URL encoded search parameter if there is a search term
-    //    const options = term ?
-    //        { params: new HttpParams().set('name', term) } : {};
-
-    //    return this.http.get<VendorModel[]>(this.vendorsUrl, options)
-    //        .pipe(
-    //            catchError(this.handleError<VendorModel[]>('searchvendors', []))
-    //        );
-    //}
-
-    //////// Save methods //////////
-
-
-
 
 }
