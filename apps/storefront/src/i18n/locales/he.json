@@ -1,0 +1,109 @@
+{
+  "common": {
+    "home": "דף הבית",
+    "allProducts": "כל המוצרים",
+    "search": "מה אתם מחפשים?",
+    "cart": "עגלת קניות",
+    "login": "התחבר",
+    "register": "הרשמה",
+    "currency": "₪",
+    "back": "חזרה",
+    "close": "סגור",
+    "loading": "טוען..."
+  },
+  "product": {
+    "addToCart": "הוסף לסל",
+    "details": "לפרטים ורכישה",
+    "compare": "הוסף להשוואה",
+    "outOfStock": "אזל מהמלאי",
+    "regularPrice": "מחיר רגיל:",
+    "price": "מחיר",
+    "specs": "מפרט טכני",
+    "badge": "מבצע",
+    "quantity": "כמות",
+    "sku": "מק\"ט: ",
+    "save": "חסכת ",
+    "inStock": "במלאי",
+    "upgradesTitle": "תוספות ושדרוגים",
+    "none": "ללא",
+    "total": "סה״כ לתשלום:",
+    "deliveryOptions": "אפשרויות משלוח",
+    "description": "תיאור מוצר",
+    "warrantyTab": "אחריות",
+    "deliveryTab": "מדיניות משלוחים",
+    "relatedProducts": "מוצרים קשורים",
+    "free": "חינם",
+    "includesUpgrades": "כולל שדרוגים:",
+    "thumbnail": "תמונה ממוזערת",
+    "warrantyPlaceholder": "פרטי אחריות יאוכלסו מנתוני האתר",
+    "deliveryPlaceholder": "פרטי משלוח יאוכלסו מנתוני האתר"
+  },
+  "nav": {
+    "menuToggle": "תפריט",
+    "prev": "הקודם",
+    "next": "הבא",
+    "allCategories": "כל הקטגוריות",
+    "callUs": "לחצו וחייגו אלינו",
+    "viewAll": "לכל המוצרים"
+  },
+  "footer": {
+    "newsletter": "התעדכנו שלא תפספסו",
+    "newsletterDesc": "הירשמו לניוזלטר שלנו וקבלו עדכונים על מבצעים חמים",
+    "emailPlaceholder": "כתובת אימייל",
+    "send": "שלח",
+    "hours": "שעות פעילות וטלפונים",
+    "visitUs": "מוזמנים לבקר אותנו"
+  },
+  "sort": {
+    "label": "מיון:",
+    "price": "מחיר",
+    "name": "שם",
+    "priceAsc": "מחיר: מהנמוך לגבוה",
+    "priceDesc": "מחיר: מהגבוה לנמוך",
+    "nameAsc": "שם: א-ת",
+    "nameDesc": "שם: ת-א"
+  },
+  "showAll": "לכל המוצרים",
+  "showLess": "הצג פחות",
+  "breadcrumb": {
+    "home": "דף הבית"
+  },
+  "contact": {
+    "title": "צור קשר",
+    "name": "שם מלא",
+    "email": "כתובת אימייל",
+    "phone": "מספר טלפון",
+    "subject": "נושא",
+    "message": "הודעה",
+    "send": "שלח הודעה",
+    "success": "ההודעה נשלחה בהצלחה!",
+    "info": "פרטי יצירת קשר",
+    "hours": "שעות פעילות",
+    "address": "כתובת",
+    "or": "או",
+    "callUs": "התקשרו אלינו",
+    "writeUs": "כתבו לנו",
+    "coordinator": "נא לתאם לפני הגעה בכל ימות השבוע"
+  },
+  "cart": {
+    "title": "עגלת הקניות",
+    "empty": "העגלה ריקה",
+    "emptyDesc": "לא נמצאו מוצרים בעגלת הקניות שלך",
+    "continueShopping": "המשך לקנות",
+    "remove": "הסר",
+    "subtotal": "סכום ביניים",
+    "shipping": "משלוח",
+    "shippingCalc": "יחושב בהמשך",
+    "total": "סה\"כ לתשלום",
+    "checkout": "מעבר לקופה",
+    "orderSummary": "סיכום הזמנה"
+  },
+  "category": {
+    "products": "מוצרים",
+    "subCategories": "תתי קטגוריות",
+    "noProducts": "לא נמצאו מוצרים בקטגוריה זו",
+    "inStockOnly": "במלאי בלבד",
+    "noProductsFound": "לא נמצאו מוצרים תואמים לחיפוש שלך.",
+    "clearFilters": "נקה סינונים"
+  }
+}

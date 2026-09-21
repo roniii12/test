@@ -1,0 +1,40 @@
+{
+  "name": "MyGan Default",
+  "colors": {
+    "primary": "#6eb43f",
+    "primaryForeground": "#ffffff",
+    "secondary": "#f5f5f0",
+    "secondaryForeground": "#333333",
+    "background": "#ffffff",
+    "foreground": "#333333",
+    "muted": "#f9f9f9",
+    "mutedForeground": "#999999",
+    "accent": "#6eb43f",
+    "accentForeground": "#ffffff",
+    "border": "#e5e5e5",
+    "ring": "#6eb43f",
+    "destructive": "#d32f2f",
+    "destructiveForeground": "#ffffff",
+    "success": "#4caf50",
+    "successForeground": "#ffffff"
+  },
+  "typography": {
+    "fontFamily": "Heebo, sans-serif",
+    "fontFamilyHeading": "Heebo, sans-serif",
+    "baseFontSize": "14px",
+    "lineHeight": "1.5"
+  },
+  "spacing": {
+    "unit": "4px",
+    "containerMaxWidth": "1180px",
+    "gridGap": "1rem",
+    "sectionPadding": "2rem"
+  },
+  "borderRadius": {
+    "sm": "4px",
+    "md": "6px",
+    "lg": "8px",
+    "xl": "12px",
+    "full": "9999px"
+  }
+}

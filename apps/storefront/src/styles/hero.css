@@ -1,0 +1,134 @@
+/* ── Hero Section — 60/40 grid matching mygan.co.il ── */
+
+.hero-grid-section {
+  background: white;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 40% 60%;
+  }
+}
+
+/* Main slider — secondary placement in RTL */
+.hero-main-slider {
+  order: 1;
+}
+
+@media (min-width: 768px) {
+  .hero-main-slider {
+    order: 2;
+  }
+}
+
+.hero-slide {
+  position: relative;
+  min-height: 260px;
+  display: flex;
+  align-items: stretch;
+}
+
+@media (min-width: 768px) {
+  .hero-slide {
+    min-height: 420px;
+  }
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.5rem;
+  background: var(--color-primary);
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+  width: fit-content;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  &:hover {
+    opacity: 1;
+    background: var(--color-primary-dark, var(--color-primary));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.hero-cta-sm {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1.2rem;
+  background: var(--color-primary);
+  color: white;
+  font-weight: 700;
+  font-size: 0.75rem;
+  border-radius: var(--radius-sm);
+  width: fit-content;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.hero-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.hero-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-border);
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.hero-dot-active {
+  background: var(--color-primary);
+  width: 10px;
+  height: 10px;
+}
+
+/* Side banners — primary placement in RTL, 2 stacked */
+.hero-side-banners {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+  order: 2;
+}
+
+@media (min-width: 768px) {
+  .hero-side-banners {
+    order: 1;
+  }
+}
+
+.hero-side-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 160px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hero-side-banner {
+    min-height: auto;
+  }
+}

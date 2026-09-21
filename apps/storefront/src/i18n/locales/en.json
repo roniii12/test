@@ -1,0 +1,109 @@
+{
+  "common": {
+    "home": "Home",
+    "allProducts": "All Products",
+    "search": "What are you looking for?",
+    "cart": "Shopping Cart",
+    "login": "Login",
+    "register": "Register",
+    "currency": "₪",
+    "back": "Back",
+    "close": "Close",
+    "loading": "Loading..."
+  },
+  "product": {
+    "addToCart": "Add to Cart",
+    "details": "Details & Purchase",
+    "compare": "Add to Compare",
+    "outOfStock": "Out of Stock",
+    "regularPrice": "Regular Price:",
+    "price": "Price",
+    "specs": "Technical Specs",
+    "badge": "Sale",
+    "quantity": "Quantity",
+    "sku": "SKU:",
+    "save": "Save",
+    "inStock": "In Stock",
+    "upgradesTitle": "Upgrades & Add-ons",
+    "none": "None",
+    "total": "Total:",
+    "deliveryOptions": "Delivery Options",
+    "description": "Product Description",
+    "warrantyTab": "Warranty",
+    "deliveryTab": "Delivery Policy",
+    "relatedProducts": "Related Products",
+    "free": "Free",
+    "includesUpgrades": "Includes upgrades:",
+    "thumbnail": "Thumbnail",
+    "warrantyPlaceholder": "Warranty details to be populated from payload site globals",
+    "deliveryPlaceholder": "Delivery details to be populated from payload site globals"
+  },
+  "nav": {
+    "menuToggle": "Menu",
+    "prev": "Previous",
+    "next": "Next",
+    "allCategories": "All Categories",
+    "callUs": "Click to call us",
+    "viewAll": "View All Products"
+  },
+  "footer": {
+    "newsletter": "Stay Updated",
+    "newsletterDesc": "Subscribe to our newsletter for hot deals and updates",
+    "emailPlaceholder": "Email address",
+    "send": "Send",
+    "hours": "Business Hours & Phone",
+    "visitUs": "Visit Us"
+  },
+  "sort": {
+    "label": "Sort:",
+    "price": "Price",
+    "name": "Name",
+    "priceAsc": "Price: Low to High",
+    "priceDesc": "Price: High to Low",
+    "nameAsc": "Name: A to Z",
+    "nameDesc": "Name: Z to A"
+  },
+  "showAll": "View All Products",
+  "showLess": "Show Less",
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent successfully!",
+    "info": "Contact Information",
+    "hours": "Business Hours",
+    "address": "Address",
+    "or": "or",
+    "callUs": "Call Us",
+    "writeUs": "Write to Us",
+    "coordinator": "Please coordinate before arriving on all weekdays"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "emptyDesc": "No products found in your shopping cart",
+    "continueShopping": "Continue Shopping",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "shippingCalc": "Calculated at checkout",
+    "total": "Total",
+    "checkout": "Proceed to Checkout",
+    "orderSummary": "Order Summary"
+  },
+  "category": {
+    "products": "Products",
+    "subCategories": "Sub Categories",
+    "noProducts": "No products found in this category",
+    "inStockOnly": "In Stock Only",
+    "noProductsFound": "No products found matching your criteria.",
+    "clearFilters": "Clear filters"
+  }
+}

@@ -1,0 +1,129 @@
+@import "tailwindcss";
+@source "../tailwind-safelist.txt";
+
+/* ── Component styles (layered below utilities) ── */
+@import "../styles/topbar.css" layer(components);
+@import "../styles/mainnav.css" layer(components);
+@import "../styles/hero.css" layer(components);
+@import "../styles/product-card.css" layer(components);
+@import "../styles/trust.css" layer(components);
+@import "../styles/footer.css" layer(components);
+@import "../styles/category.css" layer(components);
+@import "../styles/contact.css" layer(components);
+@import "../styles/cart.css" layer(components);
+@import "../styles/product-detail.css" layer(components);
+@import "../styles/responsive.css" layer(components);
+
+/* ── Theme tokens ──
+   Static hex values so Tailwind 4 can resolve them at compile-time.
+   The ThemeProvider may override these at runtime via JS. ── */
+@theme inline {
+  --color-primary: #6eb43f;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f5f5f0;
+  --color-secondary-foreground: #333333;
+  --color-background: #ffffff;
+  --color-foreground: #333333;
+  --color-muted: #f9f9f9;
+  --color-muted-foreground: #999999;
+  --color-accent: #6eb43f;
+  --color-accent-foreground: #ffffff;
+  --color-destructive: #d32f2f;
+  --color-destructive-foreground: #ffffff;
+  --color-success: #4caf50;
+  --color-success-foreground: #ffffff;
+  --color-card: #ffffff;
+  --color-card-foreground: #333333;
+  --color-border: #e5e5e5;
+  --color-ring: #6eb43f;
+
+  --font-family: "Heebo", sans-serif;
+  --font-family-heading: "Heebo", sans-serif;
+  --font-size-base: 14px;
+  --line-height-base: 1.5;
+
+  --spacing-unit: 4px;
+  --container-max-width: 1180px;
+  --grid-gap: 1rem;
+  --section-padding: 2rem;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+}
+
+/* ── Base reset ── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Heebo", sans-serif;
+  font-size: 14px;
+  color: var(--color-foreground);
+  background: var(--color-background);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* ── Global Button Interactions ── */
+button {
+  transition: filter 0.2s ease;
+}
+.bg-primary:hover,
+button[style*="--color-primary"]:hover {
+  filter: brightness(1.05);
+}
+
+/* ── Utility classes ── */
+.container-theme {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+
+.section-padding {
+  padding-block: 2rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-foreground);
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.section-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+/* ── ThemeSwitcher ── */
+.theme-switcher-panel {
+  position: fixed;
+  bottom: 1rem;
+  inset-inline-start: 1rem;
+  z-index: 1000;
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+}

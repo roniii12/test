@@ -1,0 +1,51 @@
+﻿src/payload/components/TailwindAIField.tsx(57,9): error TS2322: Type 'StaticLabel' is not assignable to type 'ReactNode'.
+  Type 'Record<string, string>' is not assignable to type 'ReactNode'.
+    Type 'Record<string, string>' is missing the following properties from type 'ReactPortal': children, type, props, key
+src/payload/components/TailwindAIField.tsx(111,27): error TS2349: This expression is not callable.
+  Type 'never' has no call signatures.
+src/payload/endpoints/ai.ts(13,26): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/payload/endpoints/ai.ts(13,26): error TS18048: 'req.json' is possibly 'undefined'.
+src/payload/endpoints/cloneSite.ts(43,23): error TS2352: Conversion of type 'number' to type 'string' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+src/payload/endpoints/cloneSite.ts(61,11): error TS2322: Type 'string' is not assignable to type 'number | Site | undefined'.
+src/payload/endpoints/cloneSite.ts(65,25): error TS2352: Conversion of type 'number' to type 'string' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+src/payload/endpoints/cloneSite.ts(65,52): error TS2352: Conversion of type 'number' to type 'string' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+src/payload/endpoints/cloneSite.ts(96,11): error TS2322: Type 'string' is not assignable to type 'number | Site | undefined'.
+src/payload/seed.ts(136,39): error TS2352: Conversion of type 'number' to type 'string' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+src/payload/seed.ts(151,46): error TS2352: Conversion of type 'number' to type 'string' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+src/payload/seed.ts(162,56): error TS2339: Property 'type' does not exist on type 'PageBlock'.
+  Property 'type' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(165,44): error TS2339: Property 'props' does not exist on type 'PageBlock'.
+  Property 'props' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(166,46): error TS2339: Property 'props' does not exist on type 'PageBlock'.
+  Property 'props' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(197,43): error TS2352: Conversion of type 'number' to type 'string' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+src/payload/seed.ts(208,47): error TS2339: Property 'type' does not exist on type 'PageBlock'.
+  Property 'type' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(209,53): error TS2339: Property 'type' does not exist on type 'PageBlock'.
+  Property 'type' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(210,48): error TS2339: Property 'type' does not exist on type 'PageBlock'.
+  Property 'type' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(211,48): error TS2339: Property 'type' does not exist on type 'PageBlock'.
+  Property 'type' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(219,33): error TS2339: Property 'props' does not exist on type 'PageBlock'.
+  Property 'props' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(220,29): error TS2339: Property 'props' does not exist on type 'PageBlock'.
+  Property 'props' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(221,35): error TS2339: Property 'props' does not exist on type 'PageBlock'.
+  Property 'props' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(236,34): error TS2339: Property 'props' does not exist on type 'PageBlock'.
+  Property 'props' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(237,36): error TS2339: Property 'props' does not exist on type 'PageBlock'.
+  Property 'props' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(247,35): error TS2339: Property 'props' does not exist on type 'PageBlock'.
+  Property 'props' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(256,29): error TS2339: Property 'props' does not exist on type 'PageBlock'.
+  Property 'props' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(257,30): error TS2339: Property 'props' does not exist on type 'PageBlock'.
+  Property 'props' does not exist on type 'HeroBlockType'.
+src/payload/seed.ts(273,11): error TS2322: Type '({ blockType: string; autoPlayMs: any; slides: any; sideBanners: any; } | { blockType: string; title: any; columns: any; categories: never[]; } | { blockType: string; title: any; columns: number; products: string[]; } | { ...; })[]' is not assignable to type '(HeroBlockType | ProductGridBlockType | CategoryBannersBlockType | TrustBadgesBlockType | AboutBlockType)[]'.
+  Type '{ blockType: string; autoPlayMs: any; slides: any; sideBanners: any; } | { blockType: string; title: any; columns: any; categories: never[]; } | { blockType: string; title: any; columns: number; products: string[]; } | { ...; }' is not assignable to type 'HeroBlockType | ProductGridBlockType | CategoryBannersBlockType | TrustBadgesBlockType | AboutBlockType'.
+    Type '{ blockType: string; autoPlayMs: any; slides: any; sideBanners: any; }' is not assignable to type 'HeroBlockType | ProductGridBlockType | CategoryBannersBlockType | TrustBadgesBlockType | AboutBlockType'.
+      Type '{ blockType: string; autoPlayMs: any; slides: any; sideBanners: any; }' is not assignable to type 'HeroBlockType'.
+        Types of property 'blockType' are incompatible.
+          Type 'string' is not assignable to type '"hero"'.

@@ -1,0 +1,40 @@
+{
+  "name": "Bold",
+  "colors": {
+    "primary": "#f97316",
+    "primaryForeground": "#ffffff",
+    "secondary": "#1e1b4b",
+    "secondaryForeground": "#e0e7ff",
+    "background": "#0f0d1a",
+    "foreground": "#f8fafc",
+    "muted": "#1e1b4b",
+    "mutedForeground": "#a5b4fc",
+    "accent": "#7c3aed",
+    "accentForeground": "#ffffff",
+    "border": "#312e81",
+    "ring": "#f97316",
+    "destructive": "#f43f5e",
+    "destructiveForeground": "#ffffff",
+    "success": "#10b981",
+    "successForeground": "#ffffff"
+  },
+  "typography": {
+    "fontFamily": "Outfit",
+    "fontFamilyHeading": "Outfit",
+    "baseFontSize": "16px",
+    "lineHeight": "1.5"
+  },
+  "spacing": {
+    "unit": "4px",
+    "containerMaxWidth": "1400px",
+    "gridGap": "2rem",
+    "sectionPadding": "5rem"
+  },
+  "borderRadius": {
+    "sm": "0.5rem",
+    "md": "1rem",
+    "lg": "1.5rem",
+    "xl": "2rem",
+    "full": "9999px"
+  }
+}

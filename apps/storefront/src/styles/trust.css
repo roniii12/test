@@ -1,0 +1,48 @@
+/* ── Trust Badges ── */
+.trust-section {
+  background: #f1f8e9;
+  border-top: 1px solid #c5e1a5;
+  border-bottom: 1px solid #c5e1a5;
+}
+
+.trust-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.25rem 0.75rem;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: var(--radius-md);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: default;
+}
+
+.trust-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 6px 24px rgba(110, 180, 63, 0.2);
+  transform: translateY(-4px);
+}
+
+.trust-card-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.trust-card:hover .trust-card-icon {
+  transform: scale(1.2);
+}
+
+.trust-card-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-foreground);
+  margin-top: 0.25rem;
+}
+
+.trust-card-desc {
+  font-size: 0.65rem;
+  color: var(--color-muted-foreground);
+  margin-top: 0.15rem;
+}

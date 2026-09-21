@@ -1,0 +1,56 @@
+/* ── Footer ── */
+.site-footer {
+  background: #f1f4ed;
+  border-top: 1px solid var(--color-border);
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-foreground);
+  margin-bottom: 0.75rem;
+}
+
+.footer-link {
+  font-size: 0.75rem;
+  color: #666;
+  &:hover { color: var(--color-primary); }
+}
+
+.footer-social-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  transition: background 0.15s;
+  &:hover { background: var(--color-primary); color: white; }
+}
+
+.footer-email-input {
+  flex: 1;
+  height: 36px;
+  padding-inline: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-start-start-radius: var(--radius-md);
+  border-end-start-radius: var(--radius-md);
+  font-size: 0.75rem;
+  outline: none;
+  &:focus { border-color: var(--color-primary); }
+}
+
+.footer-email-btn {
+  height: 36px;
+  padding-inline: 1rem;
+  background: var(--color-primary);
+  color: white;
+  font-weight: 700;
+  font-size: 0.75rem;
+  border: none;
+  border-start-end-radius: var(--radius-md);
+  border-end-end-radius: var(--radius-md);
+  &:hover { opacity: 0.9; }
+}

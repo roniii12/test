@@ -1,0 +1,146 @@
+/* ── MainNav ── matches mygan.co.il header */
+.mainnav {
+  background: white;
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-box {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  height: 40px;
+  padding-inline: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  outline: none;
+  transition: border-color 0.15s;
+  &:focus { border-color: var(--color-primary); }
+}
+
+.search-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  inset-inline-end: 0.75rem;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Info items in nav (ייעוץ אישי, משלוחים, etc) */
+.nav-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+.nav-info-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.nav-info-label {
+  font-size: 0.65rem;
+  color: #555;
+  white-space: nowrap;
+}
+
+.nav-icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--color-foreground);
+  transition: background 0.15s;
+  &:hover { background: var(--color-muted); }
+}
+
+.cart-badge {
+  position: absolute;
+  top: 2px;
+  inset-inline-end: 2px;
+  background: var(--color-primary);
+  color: white;
+  font-size: 9px;
+  font-weight: 700;
+  width: 16px;
+  height: 16px;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-nav {
+  background: white;
+  border-top: 1px solid var(--color-border);
+  overflow: visible;
+}
+
+.cat-nav-link {
+  display: block;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--color-foreground);
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s;
+  &:hover {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+  }
+}
+.cat-nav-active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+  font-weight: 700;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  inset-inline-start: 0;
+  min-width: 220px;
+  background: white;
+  border: 1px solid var(--color-border);
+  border-top: 2px solid var(--color-primary);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  z-index: 200;
+  padding: 0.25rem 0;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  color: var(--color-foreground);
+  transition: all 0.1s;
+  &:hover {
+    background: var(--color-muted);
+    color: var(--color-primary);
+    padding-inline-start: 1.25rem;
+  }
+}
+
+.mobile-drawer {
+  background: white;
+  border-top: 1px solid var(--color-border);
+  max-height: 70vh;
+  overflow-y: auto;
+}

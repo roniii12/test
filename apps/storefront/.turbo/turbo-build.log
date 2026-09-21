@@ -1,0 +1,195 @@
+
+> storefront@0.1.0 build C:\Code\ecommerce-startup\apps\storefront
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 11 errors:
+./apps/storefront/src/app/(storefront)/[site]/[slug]/page.tsx:2:1
+Module not found: Can't resolve '@/payload/payload.config'
+[0m [90m 1 |[39m [36mimport[39m { getPayload } [36mfrom[39m [32m"payload"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m configPromise [36mfrom[39m [32m"@/payload/payload.config"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mimport[39m { [33mPageRenderer[39m } [36mfrom[39m [32m"@/components/PageRenderer"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { notFound } [36mfrom[39m [32m"next/navigation"[39m[33m;[39m
+ [90m 5 |[39m[0m
+
+Import map: aliased to relative './src/payload/payload.config' inside of [project]/apps/storefront
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./apps/storefront/src/app/(storefront)/[site]/category/[slug]/page.tsx:2:1
+Module not found: Can't resolve '@/payload/payload.config'
+[0m [90m 1 |[39m [36mimport[39m { getPayload } [36mfrom[39m [32m"payload"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m configPromise [36mfrom[39m [32m"@/payload/payload.config"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mimport[39m { [33mBreadcrumb[39m } [36mfrom[39m [32m"@/components/blocks/Breadcrumb"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { [33mCategoryProductList[39m } [36mfrom[39m [32m"@/components/blocks/CategoryProductList"[39m[33m;[39m
+ [90m 5 |[39m[0m
+
+Import map: aliased to relative './src/payload/payload.config' inside of [project]/apps/storefront
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./apps/storefront/src/app/(storefront)/[site]/layout.tsx:2:1
+Module not found: Can't resolve '@/payload/payload.config'
+[0m [90m 1 |[39m [36mimport[39m { getPayload } [36mfrom[39m [32m"payload"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m configPromise [36mfrom[39m [32m"@/payload/payload.config"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mimport[39m { [33mThemeProvider[39m } [36mfrom[39m [32m"@/theme/ThemeProvider"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { [33mSiteProvider[39m } [36mfrom[39m [32m"@/config/SiteProvider"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m { [33mI18nProvider[39m } [36mfrom[39m [32m"@/i18n"[39m[33m;[39m[0m
+
+Import map: aliased to relative './src/payload/payload.config' inside of [project]/apps/storefront
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./apps/storefront/src/app/(storefront)/[site]/page.tsx:2:1
+Module not found: Can't resolve '@/payload/payload.config'
+[0m [90m 1 |[39m [36mimport[39m { getPayload } [36mfrom[39m [32m"payload"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m configPromise [36mfrom[39m [32m"@/payload/payload.config"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mimport[39m { [33mPageRenderer[39m } [36mfrom[39m [32m"@/components/PageRenderer"[39m[33m;[39m
+ [90m 4 |[39m
+ [90m 5 |[39m [36mexport[39m [36mdefault[39m [36masync[39m [36mfunction[39m [33mHomePage[39m({ params }[33m:[39m { params[33m:[39m [33mPromise[39m[33m<[39m{ site[33m:[39m string }[33m>[39m }) {[0m
+
+Import map: aliased to relative './src/payload/payload.config' inside of [project]/apps/storefront
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./apps/storefront/src/app/(storefront)/[site]/product/[slug]/page.tsx:2:1
+Module not found: Can't resolve '@/payload/payload.config'
+[0m [90m 1 |[39m [36mimport[39m { getPayload } [36mfrom[39m [32m"payload"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m configPromise [36mfrom[39m [32m"@/payload/payload.config"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mimport[39m { [33mProductDetailPage[39m } [36mfrom[39m [32m"@/components/blocks/ProductDetailPage"[39m[33m;[39m
+ [90m 4 |[39m
+ [90m 5 |[39m [36mexport[39m [36mdefault[39m [36masync[39m [36mfunction[39m [33mProductPage[39m({ params }[33m:[39m { params[33m:[39m [33mPromise[39m[33m<[39m{ site[33m:[39m string[33m;[39m slug[33m:[39m string }[33m>[39m }) {[0m
+
+Import map: aliased to relative './src/payload/payload.config' inside of [project]/apps/storefront
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./apps/storefront/src/components/PageRenderer.tsx:8:1
+Module not found: Can't resolve '@payloadcms/richtext-lexical/react'
+[0m [90m  6 |[39m [36mimport[39m { [33mTrustBadges[39m } [36mfrom[39m [32m"./blocks/TrustBadges"[39m[33m;[39m
+ [90m  7 |[39m [36mimport[39m { [33mAboutSection[39m } [36mfrom[39m [32m"./blocks/AboutSection"[39m[33m;[39m
+[31m[1m>[22m[39m[90m  8 |[39m [36mimport[39m { [33mRichText[39m } [36mfrom[39m [32m"@payloadcms/richtext-lexical/react"[39m[33m;[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m  9 |[39m
+ [90m 10 |[39m [90m/**[39m
+ [90m 11 |[39m [90m * Block registry — maps block type to React component.[39m[0m
+
+
+
+Import trace:
+  Server Component:
+    ./apps/storefront/src/components/PageRenderer.tsx
+    ./apps/storefront/src/app/(storefront)/[site]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./apps/storefront/src/app/(storefront)/[site]/[slug]/page.tsx:1:1
+Module not found: Can't resolve 'payload'
+[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { getPayload } [36mfrom[39m [32m"payload"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 2 |[39m [36mimport[39m configPromise [36mfrom[39m [32m"@/payload/payload.config"[39m[33m;[39m
+ [90m 3 |[39m [36mimport[39m { [33mPageRenderer[39m } [36mfrom[39m [32m"@/components/PageRenderer"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { notFound } [36mfrom[39m [32m"next/navigation"[39m[33m;[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./apps/storefront/src/app/(storefront)/[site]/category/[slug]/page.tsx:1:1
+Module not found: Can't resolve 'payload'
+[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { getPayload } [36mfrom[39m [32m"payload"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 2 |[39m [36mimport[39m configPromise [36mfrom[39m [32m"@/payload/payload.config"[39m[33m;[39m
+ [90m 3 |[39m [36mimport[39m { [33mBreadcrumb[39m } [36mfrom[39m [32m"@/components/blocks/Breadcrumb"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { [33mCategoryProductList[39m } [36mfrom[39m [32m"@/components/blocks/CategoryProductList"[39m[33m;[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./apps/storefront/src/app/(storefront)/[site]/layout.tsx:1:1
+Module not found: Can't resolve 'payload'
+[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { getPayload } [36mfrom[39m [32m"payload"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 2 |[39m [36mimport[39m configPromise [36mfrom[39m [32m"@/payload/payload.config"[39m[33m;[39m
+ [90m 3 |[39m [36mimport[39m { [33mThemeProvider[39m } [36mfrom[39m [32m"@/theme/ThemeProvider"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { [33mSiteProvider[39m } [36mfrom[39m [32m"@/config/SiteProvider"[39m[33m;[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./apps/storefront/src/app/(storefront)/[site]/page.tsx:1:1
+Module not found: Can't resolve 'payload'
+[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { getPayload } [36mfrom[39m [32m"payload"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 2 |[39m [36mimport[39m configPromise [36mfrom[39m [32m"@/payload/payload.config"[39m[33m;[39m
+ [90m 3 |[39m [36mimport[39m { [33mPageRenderer[39m } [36mfrom[39m [32m"@/components/PageRenderer"[39m[33m;[39m
+ [90m 4 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./apps/storefront/src/app/(storefront)/[site]/product/[slug]/page.tsx:1:1
+Module not found: Can't resolve 'payload'
+[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { getPayload } [36mfrom[39m [32m"payload"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 2 |[39m [36mimport[39m configPromise [36mfrom[39m [32m"@/payload/payload.config"[39m[33m;[39m
+ [90m 3 |[39m [36mimport[39m { [33mProductDetailPage[39m } [36mfrom[39m [32m"@/components/blocks/ProductDetailPage"[39m[33m;[39m
+ [90m 4 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./apps/storefront/src/app/(storefront)/[site]/[slug]/page.tsx:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./apps/storefront/src/app/(storefront)/[site]/category/[slug]/page.tsx:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./apps/storefront/src/app/(storefront)/[site]/layout.tsx:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./apps/storefront/src/app/(storefront)/[site]/page.tsx:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./apps/storefront/src/app/(storefront)/[site]/product/[slug]/page.tsx:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./apps/storefront/src/components/PageRenderer.tsx:8:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./apps/storefront/src/app/(storefront)/[site]/[slug]/page.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./apps/storefront/src/app/(storefront)/[site]/category/[slug]/page.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./apps/storefront/src/app/(storefront)/[site]/layout.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./apps/storefront/src/app/(storefront)/[site]/page.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./apps/storefront/src/app/(storefront)/[site]/product/[slug]/page.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+ ELIFECYCLE  Command failed with exit code 1.

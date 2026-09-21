@@ -1,0 +1,8 @@
+
+> test-payload@1.0.0 build C:\Code\ecommerce-startup\apps\test-payload
+> cross-env NODE_OPTIONS="--no-deprecation --max-old-space-size=8000" next build
+
+   ▲ Next.js 15.4.11
+   - Environments: .env
+
+   Creating an optimized production build ...

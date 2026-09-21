@@ -1,0 +1,112 @@
+/* styles/product-detail.css */
+.product-detail-page {
+  /* Inherits section-padding from globals */
+}
+
+.product-gallery-thumbnails::-webkit-scrollbar {
+  height: 6px;
+}
+
+.product-gallery-thumbnails::-webkit-scrollbar-track {
+  background: var(--color-background);
+  border-radius: var(--radius-sm);
+}
+
+.product-gallery-thumbnails::-webkit-scrollbar-thumb {
+  background: var(--color-muted);
+  border-radius: var(--radius-sm);
+}
+
+.product-gallery-thumbnails::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Image Gallery Zoom */
+.product-gallery-main img {
+  transition: transform 0.4s ease;
+}
+.product-gallery-main:hover img {
+  transform: scale(1.05);
+}
+
+/* Specs Table Alternating Rows */
+.pdp-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.pdp-specs-table tr:nth-child(even) {
+  background-color: var(--color-muted);
+}
+.pdp-specs-table tr:nth-child(odd) {
+  background-color: var(--color-background);
+}
+.pdp-specs-table td, 
+.pdp-specs-table th {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.pdp-specs-table tr:last-child td,
+.pdp-specs-table tr:last-child th {
+  border-bottom: none;
+}
+
+/* Delivery Section */
+.pdp-delivery-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+.pdp-delivery-option:hover {
+  border-color: var(--color-primary);
+  background: var(--color-muted);
+}
+.pdp-delivery-option input[type="radio"] {
+  accent-color: var(--color-primary);
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Upgrades Section */
+.pdp-upgrade-select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: white;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-foreground);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.pdp-upgrade-select:focus {
+  border-color: var(--color-primary);
+}
+.pdp-upgrade-price-add {
+  color: var(--color-success);
+  font-weight: 700;
+  margin-inline-start: 0.5rem;
+}
+
+/* Sticky Add To Cart (Mobile) */
+@media (max-width: 768px) {
+  .add-to-cart-section {
+    position: fixed;
+    bottom: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    z-index: 50;
+    background: white;
+    border-top: 1px solid var(--color-border);
+    border-radius: 0;
+    padding: 1rem;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+  }
+}

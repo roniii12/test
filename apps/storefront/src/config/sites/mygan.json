@@ -1,0 +1,126 @@
+{
+  "brand": {
+    "name": "MyGan",
+    "shortName": "MG",
+    "tagline": "מחסנים • גדרות • גינה",
+    "logoText": "M"
+  },
+  "contact": {
+    "phone": "072-3306650",
+    "email": "yoram@mygan.co.il",
+    "address": "צאלון 63, מושב שדה יצחק",
+    "wazeLink": "https://waze.com/ul?q=מייגן+MyGan",
+    "hours": {
+      "weekdays": "ימים א'-ה' 08:00-17:00",
+      "friday": "יום ו': 09:00-12:00",
+      "notes": "נא לתאם לפני הגעה בכל ימות השבוע"
+    }
+  },
+  "social": [
+    { "type": "facebook", "url": "https://facebook.com/mygan", "label": "Facebook" },
+    { "type": "youtube", "url": "https://www.youtube.com/channel/UCxswGjetnynGbtVSO3qVlgA", "label": "YouTube" },
+    { "type": "whatsapp", "url": "https://wa.me/972723306650", "label": "WhatsApp" }
+  ],
+  "topLinks": [
+    { "label": "אודות", "href": "/about" },
+    { "label": "צור קשר", "href": "/contact" },
+    { "label": "הגעה", "href": "/location" },
+    { "label": "תקנון החנות", "href": "/contract" }
+  ],
+  "infoStrip": [
+    { "icon": "💬", "text": "ייעוץ אישי" },
+    { "icon": "🚚", "text": "משלוחים לכל הארץ" },
+    { "icon": "📱", "text": "זמינים גם בווטסאפ" }
+  ],
+  "navigation": [
+    {
+      "label": "מחסן גינה",
+      "href": "/category/garden-sheds",
+      "children": [
+        { "label": "מחסני מתכת", "href": "/category/metal-sheds" },
+        { "label": "מחסן פנל מבודד", "href": "/category/insulated" },
+        { "label": "מחסני עץ", "href": "/category/wood-sheds" },
+        { "label": "בקתות עץ", "href": "/category/cabins" },
+        { "label": "מחסני פלסטיק", "href": "/category/plastic-sheds" },
+        { "label": "כונניות למחסנים", "href": "/category/shelves" }
+      ]
+    },
+    {
+      "label": "מחסני EverGreen",
+      "href": "/category/evergreen",
+      "children": [
+        { "label": "מחסן מתכת EverGreen", "href": "/category/evergreen-metal" },
+        { "label": "מחסן עץ EverGreen", "href": "/category/evergreen-wood" },
+        { "label": "מחסן פנל מבודד EverGreen", "href": "/category/evergreen-insulated" },
+        { "label": "מחסני פלסטיק Evergreen", "href": "/category/evergreen-plastic" }
+      ]
+    },
+    {
+      "label": "גדרות במבוק",
+      "href": "/category/bamboo-fences",
+      "children": [
+        { "label": "גדר במבוק", "href": "/category/bamboo" },
+        { "label": "גדר במבוק עובי 14-16", "href": "/category/bamboo-14" },
+        { "label": "גדר במבוק עובי 30-35", "href": "/category/bamboo-30" },
+        { "label": "גדר קנה צהוב", "href": "/category/yellow-cane" },
+        { "label": "גדר ערבה", "href": "/category/willow" },
+        { "label": "גדר גזעים", "href": "/category/trunk" },
+        { "label": "גדר במבוק סינטטי PVC", "href": "/category/pvc" },
+        { "label": "נלווים לגדרות במבוק", "href": "/category/bamboo-acc" }
+      ]
+    },
+    {
+      "label": "ברזנט",
+      "href": "/category/tarpaulins",
+      "children": [
+        { "label": "מצופה נגד גשם", "href": "/category/rain-tarp" },
+        { "label": "שמשונית \"ארז\" 610 גרם", "href": "/category/erez-tarp" },
+        { "label": "ברזנט שקוף", "href": "/category/clear-tarp" },
+        { "label": "ברזנט שקוף עם משבצות", "href": "/category/grid-tarp" },
+        { "label": "יוטה תפירה לפי מידה", "href": "/category/jute" }
+      ]
+    },
+    {
+      "label": "רשת צל",
+      "href": "/category/shade-nets",
+      "children": [
+        { "label": "רשת צל רגילה לפי מידה", "href": "/category/shade-regular" },
+        { "label": "רשתות הצללה צל\"ש", "href": "/category/shade-tsalash" },
+        { "label": "רשת צל כפולה", "href": "/category/shade-double" },
+        { "label": "רשת הצללה 200 גרם", "href": "/category/shade-200" },
+        { "label": "רשת הצללה 320 גרם", "href": "/category/shade-320" },
+        { "label": "רשת צל משולש", "href": "/category/shade-triangle" },
+        { "label": "רשת הגנה לעצים", "href": "/category/tree-protection" },
+        { "label": "נלווים לרשת צל", "href": "/category/shade-acc" }
+      ]
+    },
+    { "label": "Sale מבצעים +מציאון", "href": "/category/sale", "highlight": true },
+    { "label": "חממות", "href": "/category/greenhouses" },
+    { "label": "קומפוסטר", "href": "/category/composters" },
+    { "label": "גגונים", "href": "/category/canopies" },
+    { "label": "בלוג", "href": "/blog" }
+  ],
+  "footer": {
+    "columns": [
+      {
+        "title": "מפת האתר",
+        "links": [
+          { "label": "אודות", "href": "/about" },
+          { "label": "צור קשר", "href": "/contact" },
+          { "label": "הגעה", "href": "/location" },
+          { "label": "תקנון החנות", "href": "/contract" }
+        ]
+      }
+    ],
+    "copyrightText": "© 2026 MyGan. כל הזכויות שמורות.",
+    "bottomNote": "חנות אינטרנטית"
+  },
+  "seo": {
+    "title": "מחסני מתכת, פלסטיק ועץ אירופאי לגינה ולחצר | גדרות במבוק | בקתות עץ - MyGan",
+    "description": "מחסנים, גדרות ומוצרי גינה באיכות אירופאית. ייעוץ מקצועי, משלוח והתקנה לכל רחבי הארץ."
+  },
+  "locale": {
+    "defaultLocale": "he",
+    "defaultDir": "rtl"
+  }
+}
